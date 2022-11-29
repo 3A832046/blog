@@ -17,12 +17,8 @@ use App\Http\Controllers\PhotoController;
 //    return view('welcome');
 //});
 
-Route::resource('photos', PhotoController::class);
-
-
-//photos.index
-//photos.show
-//photos.create
-//photos.edit
-
+//Route::resource('photos', PhotoController::class);
+Route::resource('photos', PhotoController::class)->only([
+    'index', 'show', 'store', 'update'
+]);
 
