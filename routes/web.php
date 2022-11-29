@@ -13,8 +13,16 @@ use App\Http\Controllers\PhotoController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
 Route::resource('photos', PhotoController::class);
+
+
+//photos.index
+//photos.show
+//photos.create
+//photos.edit
+
+
